@@ -123,11 +123,15 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.6.0.1141" />
+    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1269" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
+    <ProjectReference Include="..\..\XSummitExtended\XSummitExtended.csproj">
+      <Project>{3b02aafc-159b-4745-bfd1-7cef2584509d}</Project>
+      <Name>XSummitExtended</Name>
+    </ProjectReference>
     <ProjectReference Include="..\XSummit\XSummit.csproj">
       <Project>{06A98DB2-697B-44B1-9CD6-51FC5FD1B76E}</Project>
       <Name>XSummit</Name>
