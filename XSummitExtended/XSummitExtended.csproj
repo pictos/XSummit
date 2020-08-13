@@ -32,7 +32,11 @@
     <Compile Include="**\*.android.cs" />
     <Compile Include="**\*.android.*.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Native\" />
+
+  <!--NetStandard-->
+  <ItemGroup Condition=" $(TargetFramework.StartsWith('netstandard')) ">
+    <Compile Include="**\*.netstandard.cs" />
+    <Compile Include="**\*.netstandard.*.cs" />
   </ItemGroup>
+
 </Project>

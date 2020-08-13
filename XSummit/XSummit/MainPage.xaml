@@ -27,6 +27,8 @@
             BackgroundColor="Pink"
             FontSize="Title"
             Text="Start developing now" />
+
+        <Button Clicked="Button_Clicked" Text="Click ME" />
         <Label
             Padding="30,0,30,0"
             FontSize="16"

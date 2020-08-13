@@ -14,5 +14,10 @@ namespace XSummit
 		{
 			InitializeComponent();
 		}
+
+		void Button_Clicked(object sender, EventArgs e)
+		{
+			XSummitExtended.Native.Contact.SaveContactAsync("XEssentials");
+		}
 	}
 }
