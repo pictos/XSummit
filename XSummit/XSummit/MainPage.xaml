@@ -3,9 +3,12 @@
     x:Class="XSummit.MainPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:ctr="clr-namespace:XSummitExtended.Renderers;assembly=XSummitExtended">
+    xmlns:ctr="clr-namespace:XSummitExtended.Renderers;assembly=XSummitExtended"
+    xmlns:ext="clr-namespace:XSummitExtended.Effects;assembly=XSummitExtended"
+    Padding="15">
 
-    <StackLayout>
+    <StackLayout ext:RoundedEffect.CornerRadius="20" BackgroundColor="Fuchsia">
+
         <Frame
             Padding="24"
             BackgroundColor="#2196F3"
@@ -18,7 +21,10 @@
                 TextColor="White" />
         </Frame>
         <Label
+            Margin="10,0"
             Padding="30,10,30,10"
+            ext:RoundedEffect.CornerRadius="18"
+            BackgroundColor="Pink"
             FontSize="Title"
             Text="Start developing now" />
         <Label

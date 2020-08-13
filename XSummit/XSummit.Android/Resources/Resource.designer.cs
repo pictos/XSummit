@@ -7930,6 +7930,7 @@ namespace XSummit.Droid
 			global::XSummitExtended.Resource.Styleable.View_paddingEnd = global::XSummit.Droid.Resource.Styleable.View_paddingEnd;
 			global::XSummitExtended.Resource.Styleable.View_paddingStart = global::XSummit.Droid.Resource.Styleable.View_paddingStart;
 			global::XSummitExtended.Resource.Styleable.View_theme = global::XSummit.Droid.Resource.Styleable.View_theme;
+			global::XSummitExtended.Resource.Xml.xamarin_essentials_fileprovider_file_paths = global::XSummit.Droid.Resource.Xml.xamarin_essentials_fileprovider_file_paths;
 		}
 		
 		public partial class Animation
