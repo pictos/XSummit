@@ -1,7 +1,7 @@
-<Project Sdk="MSBuild.Sdk.Extras/2.0.54">
+﻿<Project Sdk="MSBuild.Sdk.Extras/2.0.54">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;Xamarin.iOS10;MonoAndroid90;uap10.0.16299</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;Xamarin.iOS10;MonoAndroid90</TargetFrameworks>
     <LangVersion>8.0</LangVersion>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
   </PropertyGroup>
@@ -34,6 +34,5 @@
   <ItemGroup>
     <Folder Include="Effects\" />
     <Folder Include="Native\" />
-    <Folder Include="Renderers\" />
   </ItemGroup>
 </Project>
