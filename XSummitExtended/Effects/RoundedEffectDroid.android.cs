@@ -8,7 +8,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 using XSummitExtended.Effects;
 
-[assembly: ResolutionGroupName("XSummitExtend")]
+//[assembly: ResolutionGroupName("XSummitExtend")]
 [assembly: ExportEffect(typeof(RoundedEffectDroid), "RoundedEffect")]
 
 namespace XSummitExtended.Effects

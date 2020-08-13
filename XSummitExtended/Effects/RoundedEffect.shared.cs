@@ -1,6 +1,8 @@
 ﻿using System.Linq;
 using Xamarin.Forms;
 
+[assembly: ResolutionGroupName("XSummitExtend")]
+
 namespace XSummitExtended.Effects
 {
 	public class RoundedEffect : RoutingEffect

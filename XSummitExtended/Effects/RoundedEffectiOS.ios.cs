@@ -6,7 +6,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 using XSummitExtended.Effects;
 
-[assembly: ResolutionGroupName("XSummitExtend")]
+//[assembly: ResolutionGroupName("XSummitExtend")]
 [assembly: ExportEffect(typeof(RoundedEffectiOS), "RoundedEffect")]
 namespace XSummitExtended.Effects
 {
