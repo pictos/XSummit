@@ -1,4 +1,4 @@
-﻿using Contacts;
+﻿ using Contacts;
 using ContactsUI;
 using System;
 using System.Collections.Generic;
@@ -11,7 +11,7 @@ namespace XSummitExtended.Native
 {
 	public static partial class Contact
 	{
-		static Task PlatformSaveContactAsync(string name)
+		static async Task PlatformSaveContactAsync(string name)
 		{
             var uiView = Platform.GetCurrentUIViewController();
 
@@ -27,19 +27,16 @@ namespace XSummitExtended.Native
                 contact.FamilyName = nameSplit.Length > 1 ? nameSplit[^1] : " ";
             }
 
-
             try
             {
                 using var view = CNContactViewController.FromNewContact(contact);
                 view.Delegate = new ContactSaveDelegate();
                 using var nav = new UINavigationController(view);
-                uiView.PresentModalViewController(nav, true);
-
-                return Task.CompletedTask;
+                await uiView.PresentViewControllerAsync(nav, true);
             }
             catch (Exception ex)
             {
-                return Task.FromException(ex);
+                throw ex;
             }
         }
 	}
@@ -59,5 +56,6 @@ namespace XSummitExtended.Native
         {
             viewController.DismissModalViewController(true);
         }
+
     }
 }
