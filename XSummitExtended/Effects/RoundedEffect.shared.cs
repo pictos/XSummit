@@ -3,6 +3,7 @@ using Xamarin.Forms;
 
 [assembly: ResolutionGroupName("XSummitExtend")]
 
+// https://medium.com/@anna.domashych/controls-and-layouts-with-rounded-corners-with-xamarin-forms-effect-f6d04444c10a
 namespace XSummitExtended.Effects
 {
 	public class RoundedEffect : RoutingEffect

@@ -3,20 +3,30 @@
     x:Class="XSummit.Page1"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:ctr="clr-namespace:XSummitExtended.Renderers;assembly=XSummitExtended">
+    xmlns:ctr="clr-namespace:XSummitExtended.Renderers;assembly=XSummitExtended"
+    xmlns:ext="clr-namespace:XSummitExtended.Effects;assembly=XSummitExtended"
+    Padding="15"
+    BackgroundColor="Fuschia">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout ext:RoundedEffect.CornerRadius="20" BackgroundColor="WhiteSmoke">
             <!--  Place new controls here  -->
             <ctr:LabelExt
                 FontSize="36"
                 HorizontalTextAlignment="Center"
                 ShadowRadius="5"
-                Text="Inúmeraveis" />
+                Text="Inumeráveis"
+                TextColor="White" />
             <CollectionView x:Name="cv">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <StackLayout>
-                            <Label Text="{Binding .}" TextType="Html" />
+                            <Label
+                                Margin="0,5"
+                                Padding="7,2"
+                                ext:RoundedEffect.CornerRadius="20"
+                                BackgroundColor="LightPink"
+                                Text="{Binding .}"
+                                TextType="Html" />
                             <BoxView BackgroundColor="Gray" HeightRequest="1" />
                         </StackLayout>
                     </DataTemplate>
