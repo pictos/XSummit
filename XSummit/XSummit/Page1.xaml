@@ -15,7 +15,11 @@
                 HorizontalTextAlignment="Center"
                 ShadowRadius="5"
                 Text="Inumeráveis"
-                TextColor="White" />
+                TextColor="White">
+                <ctr:LabelExt.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                </ctr:LabelExt.GestureRecognizers>
+            </ctr:LabelExt>
             <CollectionView x:Name="cv">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>

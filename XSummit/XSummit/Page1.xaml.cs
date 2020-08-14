@@ -45,5 +45,10 @@ namespace XSummit
 		{
 			return Regex.Replace(input, "<.*?>", String.Empty);
 		}
+
+		void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+		{
+			XSummitExtended.Native.Contact.SaveContactAsync("XSummit");
+		}
 	}
 }
